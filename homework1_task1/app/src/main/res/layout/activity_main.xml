@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EFE7"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonOpenRedActivity"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="openRedActivity"
+        android:text="Red Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/buttonOpenGreenActivity"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FF00"
+        android:onClick="openGreenActivity"
+        android:text="Green Activtiy"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOpenRedActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonOpenRedActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenRedActivity" />
+
+    <Button
+        android:id="@+id/buttonOpenBlueActivity"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0000FF"
+        android:onClick="openBlueActivity"
+        android:text="Blue Activity"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOpenGreenActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonOpenGreenActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenGreenActivity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
