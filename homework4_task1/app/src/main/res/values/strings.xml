@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">homework4_task1</string>
+    <string name="button_get_temperature_text">Получить температуру</string>
+    <string name="edit_text_location_name_hint">Введите название города</string>
+    <string name="text_view_result_text">Текущая температура %1$d градусов</string>
+</resources>
